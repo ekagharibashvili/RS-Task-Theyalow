@@ -11,8 +11,8 @@
 }
 
 @font-face {
-    font-family: "Asap-Regular";
-    src: url("./assets/fonts/Asap-Regular.otf");
+  font-family: "Asap-Regular";
+  src: url("./assets/fonts/Asap-Regular.otf");
 }
 
 /* end of fonts code */
@@ -81,7 +81,7 @@ body::after {
   cursor: pointer;
 }
 
-.bg-logo img{
+.bg-logo img {
   animation: logo-spin 2s ease-in-out;
 }
 
@@ -105,6 +105,28 @@ body::after {
   top: 2rem;
   position: absolute;
   cursor: pointer;
+  animation: blink 10s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    color: #fff;
+  }
+  30% {
+    color: #fff;
+  }
+  50% {
+    color: rgba(243, 242, 237, 0.904);
+  }
+  70% {
+    color: #eee6c4;
+  }
+  90% {
+    color: rgba(247, 238, 197, 0.904);
+  }
+  100% {
+    color: #f5c506;
+  }
 }
 
 .navbar-list {
@@ -132,6 +154,11 @@ body::after {
   cursor: pointer;
 }
 
+.navbar-list li img:hover {
+  width: 3rem;
+  transition: 0.2s ease-in-out;
+}
+
 .navbar-list li a {
   font-family: "SegoeWP";
   font-size: 1.705rem;
@@ -142,6 +169,11 @@ body::after {
   font-style: normal;
   font-weight: normal;
   cursor: pointer;
+}
+
+.navbar-list li a:hover {
+  font-size: 2rem;
+  transition: 0.2s ease-in-out;
 }
 
 .navbar-list li span {
@@ -228,7 +260,6 @@ body::after {
   right: 14.5%;
 }
 
-
 .play-icon {
   position: absolute;
   left: 48.5%;
@@ -249,7 +280,7 @@ body::after {
   position: absolute;
   z-index: -1;
   cursor: pointer;
-} 
+}
 
 .little-play-icon {
   position: absolute;
@@ -273,55 +304,52 @@ body::after {
 }
 
 .line-icon {
-    position: absolute;
-    height: 1.2rem;
-    left: 14%;
-    bottom: 9.5%;
-    z-index: 1;
-    cursor: pointer;
+  position: absolute;
+  height: 1.2rem;
+  left: 14%;
+  bottom: 9.5%;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .line-icon::after {
-    content: "";
-    background-color: #f5c506;
-    width: 23rem;
-    height: 1.2rem;
-    opacity: 0.37;
-    position: absolute;
-    top: 0;
-    left: 44%;
-    border-radius: 25px;
-    z-index: -1;
-    cursor: pointer;
+  content: "";
+  background-color: #f5c506;
+  width: 23rem;
+  height: 1.2rem;
+  opacity: 0.37;
+  position: absolute;
+  top: 0;
+  left: 44%;
+  border-radius: 25px;
+  z-index: -1;
+  cursor: pointer;
 }
 
 .volume-icon {
-    position: absolute;
-    left: 93%;
-    bottom: 8.5%;
-    cursor: pointer;
+  position: absolute;
+  left: 93%;
+  bottom: 8.5%;
+  cursor: pointer;
 }
 
 .title-slider {
-    position: absolute;
-    right: 10.5%;
+  position: absolute;
+  right: 10.5%;
 }
 
-.title-slider p{
-    font-family: 'Asap-Regular';
-    font-size: 6.305rem;
-    text-transform: uppercase;
-    font-style: normal;
-    color: #fff;
-    line-height: 7.566rem;
-    text-align: center;
+.title-slider p {
+  font-family: "Asap-Regular";
+  font-size: 6.305rem;
+  text-transform: uppercase;
+  font-style: normal;
+  color: #fff;
+  line-height: 7.566rem;
+  text-align: center;
 }
 
 .title-slider p span {
-    color: #F5C506;
+  color: #f5c506;
 }
-
-
-
 
 /*end main secion styles */
