@@ -336,7 +336,7 @@ body::after {
 }
 /*make header responsive end */
 
-/* start main sectiion */
+/* start first sectiion styles*/
 
 .container-main {
   width: 100%;
@@ -515,4 +515,172 @@ body::after {
   }
 }
 
-/*end main secion styles */
+/*end of first secion styles */
+
+/* make responsive first section */
+@media only screen and (max-width: 1224px) {
+  .title-slider {
+    right: 5%;
+  }
+  .title-slider p {
+    font-size: 5.8rem;
+  }
+  .video-container-desktop {
+    right: 19%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .title-slider p {
+    font-size: 5rem;
+  }
+
+  .video-container-desktop {
+    right: 17%;
+  }
+}
+
+@media only screen and (max-width: 936px) {
+  .title-slider p {
+    font-size: 4rem;
+  }
+
+  .arrow-first,
+  .arrow-second {
+    width: 1.8rem;
+    height: 3.7rem;
+  }
+  .video-container-desktop {
+    right: 15%;
+  }
+}
+
+@media only screen and (max-width: 869px) {
+  .title-slider {
+    right: 1%;
+  }
+  .title-slider p {
+    font-size: 3rem;
+  }
+  .video-container-desktop {
+    right: 11%;
+}
+}
+
+@media only screen and (max-width: 764px){
+  .arrow-first,
+  .arrow-second {
+    visibility: hidden;
+  }
+  .title-slider p {
+    visibility: hidden;
+  }
+  .video-container-desktop {
+    right: 0%;
+  }
+}
+
+@media only screen and (max-width: 665px) {
+  .video-container-desktop {
+    width: 100%;
+    top: -12rem;
+  }
+  .video-container-desktop video{
+    width: 100vw;
+    left: -50%;
+  }
+  .play-icon {
+    top: 50%;
+  }
+
+  .little-play-icon {
+    bottom: -9%;
+  }
+
+  .line-icon {
+    bottom: -7%;
+  }
+
+  .line-icon::after {
+    width: 31rem;
+    left: 36%;
+  }
+
+  .volume-icon {
+    bottom: -8.5%;
+  }
+}
+
+@media only screen and (max-width: 627px) {
+  .play-icon {
+    top: 40%;
+  }
+  .little-play-icon {
+    bottom: 12%;
+  }
+
+  .line-icon {
+    bottom: 13.5%;
+  }
+
+  .line-icon::after {
+    width: 26rem;
+    left: 40%;
+  }
+
+  .volume-icon {
+    bottom: 12%;
+  }
+
+}
+
+  @media only screen and (max-width: 558px){
+    .line-icon::after {
+      width: 20rem;
+      left: 40%;
+    }
+  }
+
+  @media only screen and (max-width: 506px){
+  .play-icon {
+    top: 30%;
+  }
+  .little-play-icon {
+    bottom: 25%;
+  }
+
+  .line-icon {
+    bottom: 26.5%;
+  }
+
+  .volume-icon {
+    bottom: 25%;
+  }
+
+  .line-icon::after {
+    width: 18rem;
+    left: 40%;
+  }
+
+  }
+
+  @media only screen and (max-width: 436px) {
+    .line-icon::after {
+      width: 12rem;
+    }
+    .play-icon {
+      top: 22%;
+    }
+    .little-play-icon {
+      bottom: 40%;
+    }
+  
+    .line-icon {
+      bottom: 42%;
+    }
+  
+    .volume-icon {
+      bottom: 41%;
+    }
+  }
+
+/* end of responsive first section styles */
