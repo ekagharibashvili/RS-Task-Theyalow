@@ -471,7 +471,7 @@ body::after {
   opacity: 0.37;
   position: absolute;
   top: 0;
-  left: 44%;
+  left: 42%;
   border-radius: 25px;
   z-index: -1;
   cursor: pointer;
