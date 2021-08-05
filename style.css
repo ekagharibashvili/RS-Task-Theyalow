@@ -30,6 +30,11 @@
   src: url("./assets/fonts/PTN77F.ttf");
 }
 
+@font-face {
+  font-family: "openSans";
+  src: url("./assets/fonts/OpenSans-Regular.ttf");
+}
+
 /* end of fonts code */
 
 /* header block's styles */
@@ -255,7 +260,6 @@ body::after {
   }
   .container-header {
     width: 100%;
-   
   }
   .logo-container {
     width: 30vw;
@@ -371,7 +375,6 @@ body::after {
   flex-direction: column;
   position: relative;
 }
-
 
 .intro-section {
   display: flex;
@@ -623,7 +626,7 @@ body::after {
     width: 100%;
     left: -50%;
   }
-  .video-container-desktop video[poster]{
+  .video-container-desktop video[poster] {
     width: 100%;
   }
 
@@ -1169,7 +1172,6 @@ body::after {
   .slider {
     left: -3%;
   }
-
 }
 
 @media only screen and (max-width: 1861px) {
@@ -1219,7 +1221,6 @@ body::after {
 }
 
 @media only screen and (max-width: 1063px) {
-  
   .twitter {
     width: 25rem;
     margin-left: 0rem;
@@ -1266,7 +1267,7 @@ body::after {
   }
 }
 
-@media only screen and (max-width: 798px)  {
+@media only screen and (max-width: 798px) {
   .slider {
     margin-left: -29%;
   }
@@ -1292,12 +1293,11 @@ body::after {
     visibility: hidden;
     display: none;
   }
- 
+
   .video {
     margin-left: 0.5rem;
   }
- 
-  
+
   .three-column {
     flex-wrap: wrap;
     height: 100%;
@@ -1306,7 +1306,7 @@ body::after {
   .paragraph {
     width: 50%;
   }
-  .video .video-desk[poster]{
+  .video .video-desk[poster] {
     width: 100%;
     height: 100%;
   }
@@ -1315,17 +1315,14 @@ body::after {
     width: 49%;
     height: 100%;
   }
-/*
+  /*
   video {
     max-width: 100%;
     height: 100%;
   } */
 }
 
-
-
 @media only screen and (max-width: 621px) {
-
   .paragraph {
     height: 22rem;
   }
@@ -1336,14 +1333,12 @@ body::after {
 }
 
 @media only screen and (max-width: 589px) {
-
   .paragraph {
     height: 21rem;
   }
 }
 
 @media only screen and (max-width: 558px) {
-
   .paragraph {
     height: 20rem;
   }
@@ -1353,26 +1348,19 @@ body::after {
   }
 }
 
-
 @media only screen and (max-width: 525px) {
-
   .paragraph {
     height: 19rem;
   }
 }
 
-
 @media only screen and (max-width: 498px) {
-
   .paragraph {
     width: 49%;
   }
 }
 
-
-
 @media only screen and (max-width: 465px) {
-
   .paragraph {
     height: 18rem;
   }
@@ -1382,16 +1370,11 @@ body::after {
   }
 }
 
-
-
 @media only screen and (max-width: 433px) {
-
   .paragraph {
     height: 15rem;
   }
 }
-
-
 
 /* news end */
 
@@ -1508,7 +1491,6 @@ form input[type="submit"] {
   }
 }
 
-
 @media only screen and (max-width: 437px) {
   .chat {
     width: 100vw;
@@ -1524,13 +1506,12 @@ form input[type="submit"] {
   form input[type="text"] {
     width: 23rem;
   }
-
 }
 
 @media only screen and (max-width: 390px) {
-.chat {
-  margin-top: -45rem;
-}
+  .chat {
+    margin-top: -45rem;
+  }
   .message {
     width: 20rem;
   }
@@ -1548,7 +1529,7 @@ form input[type="submit"] {
 .grey-section {
   width: 100vw;
   height: 49.9rem;
-  background: url("./assets/images/grey-section-bg.png"); 
+  background: url("./assets/images/grey-section-bg.png");
   display: flex;
   justify-content: center;
 }
@@ -1576,13 +1557,12 @@ form input[type="submit"] {
 .two-column {
   display: flex;
   margin-top: -20rem;
-
 }
 
 .technics {
   display: flex;
   justify-content: space-between;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   margin: 0 4rem;
 }
 
@@ -1654,7 +1634,7 @@ form input[type="submit"] {
 .bullets ul li {
   width: 35.168rem;
   height: 6rem;
-  font-family: OpenSans;
+  font-family: "OpenSans";
   font-weight: normal;
   font-size: 2.2rem;
   letter-spacing: 0.01em;
@@ -1679,3 +1659,195 @@ form input[type="submit"] {
 }
 
 /* end of grey section styles */
+
+/* make grey section responsive */
+
+@media only screen and (max-width: 1033px) {
+  .two-column {
+    margin-top: -5rem;
+  }
+  .computer {
+    width: 26rem;
+    height: 19rem;
+    margin-left: 7rem;
+  }
+
+  .planshet {
+    margin-left: 0.5rem;
+    width: 8rem;
+    height: 13rem;
+    margin-top: 13rem;
+  }
+
+  .mobile {
+    margin-left: 0.5rem;
+    width: 3rem;
+    height: 4.5rem;
+    margin-top: 20.5rem;
+  }
+
+  .sale {
+    width: 9rem;
+    height: 9rem;
+    top: 20%;
+  }
+
+  .sale p {
+    font-size: 1.5rem;
+  }
+
+  .bullets {
+    margin-top: 5rem;
+  }
+  .bullets ul li {
+    width: 30rem;
+    font-size: 2.1rem;
+  }
+
+  .bullets ul li::before {
+    top: 10%;
+    left: -7%;
+  }
+}
+
+@media only screen and (max-width: 785px) {
+  .two-column {
+    margin-top: -10rem;
+  }
+  .computer {
+    margin-left: 10rem;
+  }
+
+  .bullets {
+    margin-left: 0rem;
+  }
+
+  .bullets ul li {
+    width: 25rem;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .grey-section-block h1 {
+    margin-left: 1rem;
+  }
+  .bullets ul li::before {
+    left: -8%;
+  }
+
+  .sale {
+    left: 1%;
+  }
+}
+
+@media only screen and (max-width: 666px) {
+  .bullets {
+    visibility: hidden;
+    display: none;
+  }
+
+  .technics {
+    margin-left: 8%;
+  }
+
+  .computer {
+    width: 32.3rem;
+    height: 25.5rem;
+  }
+
+  .planshet {
+    margin-left: 2rem;
+    width: 8rem;
+    height: 13rem;
+    margin-top: 18.6rem;
+  }
+
+  .mobile {
+    margin-left: 2rem;
+    width: 3rem;
+    height: 4.5rem;
+    margin-top: 26rem;
+  }
+
+  .sale {
+    left: -10%;
+  }
+
+  .grey-section-block h1 {
+    width: 75rem;
+    height: 13.74rem;
+    font-family: "openSans";
+    font-size: 3.9rem;
+  }
+}
+
+
+@media only screen and (max-width: 601px) {
+  .grey-section-block h1{
+    width: 70rem;
+    height: 10rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .technics {
+    margin-left: 5%;
+  }
+}
+
+@media only screen and (max-width: 504px) {
+  .computer {
+    width: 26rem;
+    height: 19rem;
+  }
+
+  .planshet {
+    margin-left: 0rem;
+    width: 8rem;
+    height: 13rem;
+    margin-top: 13rem;
+  }
+
+  .mobile {
+    margin-left: 0.4rem;
+    width: 3rem;
+    height: 4.5rem;
+    margin-top: 20.5rem;
+  }
+
+  .technics {
+    margin-left: 9%;
+    margin-top: 8%;
+  }
+
+  .grey-section-block h1 {
+    font-size: 2rem;
+  }
+
+  .sale {
+    width: 6rem;
+    height: 6rem;
+    left: 5%;
+  }
+
+  .sale p {
+    font-size: 1rem;
+  }
+}
+
+  @media only screen and (max-width: 373px) {
+    .planshet {
+      margin-left: -1rem;
+    }
+  
+    .mobile {
+      margin-left: 0rem;
+    }
+  
+    .technics {
+      margin-left: 10%;
+  }
+
+  }
+
+/*make grey section responsive */
