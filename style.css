@@ -369,6 +369,7 @@ body::after {
   position: relative;
 }
 
+
 .intro-section {
   display: flex;
   flex-direction: row;
@@ -1449,9 +1450,12 @@ body::after {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  max-width: 66.6rem;
+  visibility: hidden;
+  display: none;
 }
 
-.twitter-chat img {
+.twitter-chat {
   width: 15.805rem;
   height: 13.299rem;
 }
@@ -1522,3 +1526,37 @@ form input[type="submit"] {
   right: 0%;
 }
 /*end chat section styles */
+
+/*make chat serction responsive */
+@media only screen and (max-width: 666px) {
+  .chat {
+    visibility: visible;
+    display: flex;
+    margin-top: -33rem;
+  }
+}
+
+@media only screen and (max-width: 437px) {
+  .chat {
+    width: 100vw;
+  }
+
+  .message {
+    width: 23rem;
+  }
+  form input[type="text"] {
+    width: 23rem;
+  }
+
+}
+
+@media only screen and (max-width: 390px) {
+
+  .message {
+    width: 20rem;
+  }
+  form input[type="text"] {
+    width: 20rem;
+  }
+}
+/* end of responsive chat */
