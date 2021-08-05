@@ -76,6 +76,7 @@ body::after {
 
 .container-main {
   position: relative;
+  width: 100vw;
 }
 
 .container-header {
@@ -84,6 +85,7 @@ body::after {
   justify-content: space-between;
   align-items: center;
   margin: 2.8rem 18rem 2.8rem 18rem;
+  width: 100vw;
 }
 
 .logo-container {
