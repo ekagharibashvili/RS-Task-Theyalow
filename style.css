@@ -25,6 +25,11 @@
   src: url("./assets/fonts/PTS55F.ttf");
 }
 
+@font-face {
+  font-family: "PTSans-NarrowBold";
+  src: url("./assets/fonts/PTN77F.ttf");
+}
+
 /* end of fonts code */
 
 /* header block's styles */
@@ -34,7 +39,6 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  list-style-type: none;
   outline: none;
 }
 
@@ -250,9 +254,8 @@ body::after {
     background-image: none;
   }
   .container-header {
-    width: 100vw;
-    max-width: 66.6rem;
-    min-width: 36rem;
+    width: 100%;
+   
   }
   .logo-container {
     width: 30vw;
@@ -271,7 +274,7 @@ body::after {
     font-size: 1.929rem;
   }
   .navbar-list {
-    width: 75vw;
+    width: 75%;
     height: 6.2rem;
     box-shadow: none;
     left: 10%;
@@ -311,7 +314,7 @@ body::after {
   }
 
   .logo-container {
-    width: 35vw;
+    width: 35%;
   }
 }
 
@@ -605,14 +608,25 @@ body::after {
 }
 
 @media only screen and (max-width: 665px) {
+  .arrow-first,
+  .arrow-second {
+    display: none;
+  }
+  .title-slider p {
+    display: none;
+  }
   .video-container-desktop {
-    width: 100%;
-    top: -12rem;
+    width: 150%;
+    top: -11.5rem;
   }
   .video-container-desktop video {
-    width: 100vw;
+    width: 100%;
     left: -50%;
   }
+  .video-container-desktop video[poster]{
+    width: 100%;
+  }
+
   .play-icon {
     top: 50%;
   }
@@ -985,8 +999,8 @@ body::after {
 }
 
 .paragraph p {
-  width: 27.9rem;
-  height: 34.561rem;
+  width: 100%;
+  height: 100%;
   font-family: SegoeWP-Light;
   font-weight: normal;
   font-size: 2.905rem;
@@ -1111,7 +1125,6 @@ body::after {
 }
 
 .slider {
-  left: 3%;
   width: 89.6rem;
   height: 1.5rem;
   border-radius: 0.75rem;
@@ -1149,13 +1162,14 @@ body::after {
     margin-top: 3.2vw;
   }
 
-  .news-block .heading {
-    margin-left: 10%;
+  .news-block {
+    margin-left: 35%;
   }
+
   .slider {
-    top: -1rem;
-    left: 15%;
+    left: -3%;
   }
+
 }
 
 @media only screen and (max-width: 1861px) {
@@ -1170,23 +1184,31 @@ body::after {
   }
 }
 
-@media only screen and (max-width: 1601px) {
+@media only screen and (max-width: 1602px) {
   .news {
     margin-top: 6.9rem;
   }
 
-  .three-column {
-    margin-left: -17vw;
+  .news-block {
+    margin-left: 30%;
+  }
+
+  .slider {
+    left: -10%;
   }
 }
 
-@media only screen and (max-width: 1337px) {
+@media only screen and (max-width: 1338px) {
   .news {
     margin-top: 6.7rem;
   }
 
-  .three-column {
-    margin-left: -4vw;
+  .slider {
+    margin-left: -8%;
+  }
+
+  .news-block .heading {
+    margin-left: -20%;
   }
 }
 
@@ -1197,9 +1219,7 @@ body::after {
 }
 
 @media only screen and (max-width: 1063px) {
-  .three-column {
-    margin-left: 0vw;
-  }
+  
   .twitter {
     width: 25rem;
     margin-left: 0rem;
@@ -1208,6 +1228,10 @@ body::after {
   .slider {
     left: 9%;
     width: 70rem;
+  }
+
+  .news-block .heading {
+    margin-left: -15%;
   }
 
   .small-line {
@@ -1224,6 +1248,7 @@ body::after {
   }
   .twitter {
     visibility: hidden;
+    display: none;
   }
 
   .slider {
@@ -1241,204 +1266,132 @@ body::after {
   }
 }
 
-@media only screen and (max-width: 706px) {
-  .news-block {
-    width: 100vw;
-    margin-left: 3.8rem;
-  }
-
+@media only screen and (max-width: 798px)  {
   .slider {
-    left: 6%;
+    margin-left: -29%;
   }
 }
 
 @media only screen and (max-width: 666px) {
   .news {
     background: none;
+    margin-top: 2rem;
   }
 
   .heading {
     visibility: hidden;
+    display: none;
   }
 
   .date {
     visibility: hidden;
+    display: none;
   }
 
   .slider {
     visibility: hidden;
+    display: none;
+  }
+ 
+  .video {
+    margin-left: 0.5rem;
+  }
+ 
+  
+  .three-column {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+
+  .paragraph {
+    width: 50%;
+  }
+  .video .video-desk[poster]{
+    width: 100%;
+    height: 100%;
+  }
+
+  .video {
+    width: 49%;
+    height: 100%;
+  }
+/*
+  video {
+    max-width: 100%;
+    height: 100%;
+  } */
+}
+
+
+
+@media only screen and (max-width: 621px) {
+
+  .paragraph {
+    height: 22rem;
   }
 
   .news {
     margin-top: -1rem;
-    width: 66.5rem;
-  }
-
-  .news-block {
-    margin-left: 3rem;
-    height: 23.3rem;
-    text-align: center;
-  }
-
-  .video {
-    margin-left: 2rem;
-  }
-
-  .paragraph {
-    width: 31.1rem;
-    padding: 0;
   }
 }
 
-@media only screen and (max-width: 643px) {
-  .video {
-    margin-left: 1rem;
-  }
+@media only screen and (max-width: 589px) {
 
   .paragraph {
-    width: 30.1rem;
+    height: 21rem;
   }
 }
 
-@media only screen and (max-width: 636px) {
-  .paragraph {
-    width: 29rem;
-    margin-left: -2.5rem;
-  }
-}
+@media only screen and (max-width: 558px) {
 
-@media only screen and (max-width: 622px) {
   .paragraph {
-    width: 28rem;
+    height: 20rem;
   }
+
   .news {
-    margin-top: -5rem;
-  }
-
-  .paragraph p {
-    width: 22rem;
-    font-size: 2.505rem;
-    text-align: left;
-  }
-
-  .video {
-    margin-left: 1rem;
+    margin-top: -1rem;
   }
 }
 
-@media only screen and (max-width: 579px) {
+
+@media only screen and (max-width: 525px) {
+
   .paragraph {
-    width: 25rem;
-    margin-left: -5rem;
-  }
-  .paragraph p {
-    width: 18rem;
-    font-size: 2rem;
-    text-align: left;
+    height: 19rem;
   }
 }
 
-@media only screen and (max-width: 536px) {
+
+@media only screen and (max-width: 498px) {
+
   .paragraph {
-    width: 21rem;
-    margin-left: -7.5rem;
-  }
-  .paragraph p {
-    width: 15rem;
-    font-size: 1.8rem;
-    text-align: left;
-  }
-
-  .video {
-    margin-left: 0.3rem;
+    width: 49%;
   }
 }
 
-@media only screen and (max-width: 497px) {
+
+
+@media only screen and (max-width: 465px) {
+
   .paragraph {
-    width: 19rem;
-    margin-left: -9.5rem;
-  }
-  .paragraph p {
-    width: 13rem;
-    font-size: 1.6rem;
-    text-align: left;
+    height: 18rem;
   }
 
-  .video {
-    margin-left: 0.3rem;
+  .news {
+    margin-top: -1.5rem;
   }
 }
 
-@media only screen and (max-width: 469px) {
+
+
+@media only screen and (max-width: 433px) {
+
   .paragraph {
-    width: 15rem;
-    margin-left: -11.3rem;
-  }
-  .paragraph p {
-    width: 12rem;
-    font-size: 1.4rem;
-    text-align: left;
-  }
-
-  .video {
-    margin-left: 0.3rem;
+    height: 15rem;
   }
 }
 
-@media only screen and (max-width: 451px) {
-  .paragraph {
-    width: 12rem;
-    margin-left: -11.3rem;
-  }
-  .paragraph p {
-    width: 10rem;
-    font-size: 1.4rem;
-    text-align: left;
-  }
 
-  .video {
-    margin-left: 0rem;
-  }
-}
-
-@media only screen and (max-width: 434px) {
-  .paragraph {
-    width: 10rem;
-    margin-left: -13rem;
-  }
-  .paragraph p {
-    width: 9rem;
-    font-size: 1.4rem;
-  }
-}
-
-@media only screen and (max-width: 417px) {
-  .paragraph {
-    width: 9rem;
-    margin-left: -13rem;
-  }
-  .paragraph p {
-    width: 7rem;
-    font-size: 1rem;
-  }
-}
-
-@media only screen and (max-width: 417px) {
-  .paragraph {
-    visibility: hidden;
-  }
-
-  .video {
-    margin-left: -10%;
-  }
-}
-
-@media only screen and (max-width: 381px) {
-  .video {
-    margin-left: -20%;
-  }
-}
 
 /* news end */
 
@@ -1532,15 +1485,39 @@ form input[type="submit"] {
   .chat {
     visibility: visible;
     display: flex;
-    margin-top: -33rem;
+    margin-top: -36rem;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .chat {
+    margin-top: -40rem;
+  }
+  .paragraph p {
+    font-size: 2.3rem;
+    margin-top: -2.5rem;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .chat {
+    margin-top: -41.5rem;
+  }
+  .paragraph p {
+    font-size: 2.05rem;
+  }
+}
+
 
 @media only screen and (max-width: 437px) {
   .chat {
     width: 100vw;
+    margin-top: -43rem;
   }
 
+  .paragraph p {
+    font-size: 1.8rem;
+  }
   .message {
     width: 23rem;
   }
@@ -1551,12 +1528,154 @@ form input[type="submit"] {
 }
 
 @media only screen and (max-width: 390px) {
-
+.chat {
+  margin-top: -45rem;
+}
   .message {
     width: 20rem;
   }
   form input[type="text"] {
     width: 20rem;
   }
+  .paragraph p {
+    font-size: 1.3rem;
+  }
 }
 /* end of responsive chat */
+
+/* start of grey section styles */
+
+.grey-section {
+  width: 100vw;
+  height: 49.9rem;
+  background: url("./assets/images/grey-section-bg.png"); 
+  display: flex;
+  justify-content: center;
+}
+
+.grey-section-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.grey-section-block h1 {
+  width: 91.822rem;
+  height: 18.74rem;
+  font-family: PTSans-Regular;
+  font-weight: normal;
+  font-size: 4.305rem;
+  letter-spacing: 0.01em;
+  line-height: 5.166rem;
+  text-align: center;
+  color: #f5c506;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  margin-left: 6rem;
+}
+
+.two-column {
+  display: flex;
+  margin-top: -20rem;
+
+}
+
+.technics {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  margin: 0 4rem;
+}
+
+.computer {
+  position: relative;
+  width: 32.3rem;
+  height: 25.5rem;
+}
+
+.computer img {
+  width: 100%;
+  height: 100%;
+}
+
+.sale {
+  width: 11.6rem;
+  height: 11.6rem;
+  background: #f5c506;
+  border-radius: 50%;
+  position: relative;
+  top: 17%;
+  left: -4%;
+}
+
+.sale p {
+  font-family: PTSans-NarrowBold;
+  font-weight: normal;
+  font-size: 1.874rem;
+  letter-spacing: 0.01em;
+  line-height: 2.249rem;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 1.7%;
+  transform: translateY(-50%);
+}
+
+.planshet {
+  width: 12.9rem;
+  height: 17.3rem;
+  margin-top: 15.7rem;
+  margin-left: 3rem;
+}
+
+.planshet img {
+  width: 100%;
+  height: 100%;
+}
+
+.mobile {
+  width: 3.9rem;
+  height: 6.3rem;
+  margin-top: 26.5rem;
+  margin-left: 3rem;
+}
+
+.mobile img {
+  width: 100%;
+  height: 100%;
+}
+
+.bullets {
+  margin-left: 5rem;
+  margin-top: 15rem;
+  display: flex;
+}
+
+.bullets ul li {
+  width: 35.168rem;
+  height: 6rem;
+  font-family: OpenSans;
+  font-weight: normal;
+  font-size: 2.2rem;
+  letter-spacing: 0.01em;
+  line-height: 2.64rem;
+  text-align: left;
+  color: #a9a9a7;
+  list-style-type: disc;
+  position: relative;
+}
+
+.bullets ul li::before {
+  content: "";
+  color: #f5c506;
+  font-weight: bold;
+  position: absolute;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-color: #f5c506;
+  border-radius: 50% 50% 50% 50%;
+  top: 9%;
+  left: -6%;
+}
+
+/* end of grey section styles */
