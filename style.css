@@ -55,7 +55,7 @@ html {
 
 body {
   overflow-x: hidden;
-  width: 100%;
+  width: 100vw;
 }
 
 body::after {
@@ -1781,9 +1781,8 @@ form input[type="submit"] {
   }
 }
 
-
 @media only screen and (max-width: 601px) {
-  .grey-section-block h1{
+  .grey-section-block h1 {
     width: 70rem;
     height: 10rem;
     font-size: 3rem;
@@ -1835,19 +1834,18 @@ form input[type="submit"] {
   }
 }
 
-  @media only screen and (max-width: 373px) {
-    .planshet {
-      margin-left: -1rem;
-    }
-  
-    .mobile {
-      margin-left: 0rem;
-    }
-  
-    .technics {
-      margin-left: 10%;
+@media only screen and (max-width: 373px) {
+  .planshet {
+    margin-left: -1rem;
   }
 
+  .mobile {
+    margin-left: 0rem;
   }
+
+  .technics {
+    margin-left: 10%;
+  }
+}
 
 /*make grey section responsive */
