@@ -77,7 +77,7 @@ body::after {
 
 .container-main {
   position: relative;
-  width: 100vw;
+  width: 100%;
 }
 
 .container-header {
@@ -86,7 +86,7 @@ body::after {
   justify-content: space-between;
   align-items: center;
   margin: 2.8rem 18rem 2.8rem 18rem;
-  width: 100vw;
+  width: 100%;
 }
 
 .logo-container {
@@ -212,23 +212,23 @@ body::after {
 @media only screen and (max-width: 1187px) {
   .logo-container {
     margin-top: 2rem;
-    left: 5%;
+    left: -8%;
   }
   .navbar-list {
-    left: 55%;
+    left: 30%;
   }
 }
 
 @media only screen and (max-width: 966px) {
   .logo-container {
-    left: -20%;
+    left: -15%;
   }
   .navbar-list {
-    left: 40%;
+    left: 20%;
   }
 }
 
-@media only screen and (max-width: 862px) {
+@media only screen and (max-width: 863px) {
   .container-header {
     margin: 2.8rem 15rem 2.8rem 10rem;
   }
@@ -244,7 +244,7 @@ body::after {
     top: 0.7rem;
   }
   .navbar-list {
-    left: 50%;
+    left: 30%;
     width: 35rem;
   }
 
