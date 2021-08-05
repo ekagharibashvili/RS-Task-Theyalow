@@ -1251,7 +1251,7 @@ body::after {
   }
 }
 
-@media only screen and (max-width: 666px){
+@media only screen and (max-width: 666px) {
   .news {
     background: none;
   }
@@ -1278,7 +1278,7 @@ body::after {
     height: 23.3rem;
     text-align: center;
   }
- 
+
   .video {
     margin-left: 2rem;
   }
@@ -1287,12 +1287,9 @@ body::after {
     width: 31.1rem;
     padding: 0;
   }
-
 }
 
-@media only screen and (max-width: 643px){
-
- 
+@media only screen and (max-width: 643px) {
   .video {
     margin-left: 1rem;
   }
@@ -1309,24 +1306,23 @@ body::after {
   }
 }
 
-@media only screen and (max-width: 622px){
+@media only screen and (max-width: 622px) {
   .paragraph {
     width: 28rem;
-  
-}
-.news {
-  margin-top: -5rem;
-}
+  }
+  .news {
+    margin-top: -5rem;
+  }
 
-.paragraph p {
-  width: 22rem;
-  font-size: 2.505rem;;
-  text-align: left;
-}
+  .paragraph p {
+    width: 22rem;
+    font-size: 2.505rem;
+    text-align: left;
+  }
 
-.video {
-  margin-left: 1rem;
-}
+  .video {
+    margin-left: 1rem;
+  }
 }
 
 @media only screen and (max-width: 579px) {
@@ -1336,10 +1332,9 @@ body::after {
   }
   .paragraph p {
     width: 18rem;
-    font-size: 2rem;;
+    font-size: 2rem;
     text-align: left;
   }
-
 }
 
 @media only screen and (max-width: 536px) {
@@ -1349,14 +1344,13 @@ body::after {
   }
   .paragraph p {
     width: 15rem;
-    font-size: 1.8rem;;
+    font-size: 1.8rem;
     text-align: left;
   }
 
   .video {
     margin-left: 0.3rem;
   }
-
 }
 
 @media only screen and (max-width: 497px) {
@@ -1366,14 +1360,13 @@ body::after {
   }
   .paragraph p {
     width: 13rem;
-    font-size: 1.6rem;;
+    font-size: 1.6rem;
     text-align: left;
   }
 
   .video {
     margin-left: 0.3rem;
   }
-
 }
 
 @media only screen and (max-width: 469px) {
@@ -1383,14 +1376,13 @@ body::after {
   }
   .paragraph p {
     width: 12rem;
-    font-size: 1.4rem;;
+    font-size: 1.4rem;
     text-align: left;
   }
 
   .video {
     margin-left: 0.3rem;
   }
-
 }
 
 @media only screen and (max-width: 451px) {
@@ -1400,14 +1392,13 @@ body::after {
   }
   .paragraph p {
     width: 10rem;
-    font-size: 1.4rem;;
+    font-size: 1.4rem;
     text-align: left;
   }
 
   .video {
     margin-left: 0rem;
   }
-
 }
 
 @media only screen and (max-width: 434px) {
@@ -1417,9 +1408,8 @@ body::after {
   }
   .paragraph p {
     width: 9rem;
-    font-size: 1.4rem;;
+    font-size: 1.4rem;
   }
-
 }
 
 @media only screen and (max-width: 417px) {
@@ -1429,12 +1419,9 @@ body::after {
   }
   .paragraph p {
     width: 7rem;
-    font-size: 1rem;;
-
+    font-size: 1rem;
   }
-
 }
-
 
 @media only screen and (max-width: 417px) {
   .paragraph {
@@ -1452,6 +1439,6 @@ body::after {
   }
 }
 
-
-
 /* news end */
+
+
