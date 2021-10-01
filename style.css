@@ -55,7 +55,6 @@ html {
 
 body {
   overflow-x: hidden;
-  width: 100vw;
   min-width: 360px;
 }
 
@@ -395,12 +394,15 @@ body::after {
   width: 3.2rem;
   height: 5.7rem;
   position: relative;
-  left: 0%;
   cursor: pointer;
 }
 
+.arrow-first {
+  left: 0%;
+}
+
 .arrow-second {
-  right: 50%;
+  right: 0%;
 }
 
 .arrow-first img,
